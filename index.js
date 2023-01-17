@@ -16,7 +16,7 @@ const app = express();
 
 
 const dbpath = require('./config/connection')
-mongoose.connect(dbpath.dbpath,()=>{
+mongoose.connect("mongodb+srv://Sachin:Sachin123@cluster0.0ucfbbr.mongodb.net/?retryWrites=true&w=majority",()=>{
   console.log("Database Connected.");
 })
  
