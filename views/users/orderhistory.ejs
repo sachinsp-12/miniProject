@@ -26,13 +26,11 @@
                      <table class="table">
                         <thead>
                             <tr  >
-                                <th scope="col">Orderid</th>
-                                <th scope="col">Name</th>
+                                <th >Orderid</th>                              
                                 <th>Discount</th>
                                 <th>Payment</th>
                                 <th>Status</th>                           
-                                <th>Total</th>  
-                                <th>Updated Total</th>                            
+                                <th>Total</th>                              
                                 <th>Actions</th>
                             </tr>
                         </thead>
@@ -48,43 +46,32 @@
                                                 <div class="product__cart__item__pic">
                                                     <h4><strong> <%= key._id %>  </strong></h4>  
                                                 </div>                                      
-                                            </td>
+                                            </td>                                         
                                             <td class="quantity__item">
                                                 <div class="quantity">
                                                   
-                                                  <h3> <strong><%=key.name %></strong></h3> 
+                                                  <h4> <strong><%=key.offer %></strong></h4> 
+                                                </div>
+                                            </td>                                            
+                                            <td class="quantity__item">
+                                                <div class="quantity">
+                                                  
+                                                  <h4> <strong><%=key.payment %></strong></h4> 
                                                 </div>
                                             </td>
                                             <td class="quantity__item">
                                                 <div class="quantity">
                                                   
-                                                  <h3> <strong><%=key.offer %></strong></h3> 
-                                                </div>
-                                            </td>
-                                            
-                                            <td class="quantity__item">
-                                                <div class="quantity">
-                                                  
-                                                  <h3> <strong><%=key.payment %></strong></h3> 
-                                                </div>
-                                            </td>
-                                            <td class="quantity__item">
-                                                <div class="quantity">
-                                                  
-                                                  <h3> <strong><%=key.status %></strong></h3> 
+                                                  <h4> <strong><%=key.status %></strong></h4> 
                                                 </div>
                                             </td>    
                                             <td class="quantity__item">
                                                 <div class="quantity">                                                 
-                                                  <h3> ₹ <%=key.products.totalPrice %></h3> 
+                                                  <h4> ₹ <%=key.products.totalPrice %></h4> 
                                                   
                                                 </div>      
                                             </td>
-                                            <td class="quantity__item">
-                                                <div class="quantity">                                                                             
-                                                  <h3>₹ <%=(key.products.totalPrice) * (100 - key.discount)/100 %></h3>                                                 
-                                                </div>      
-                                            </td>
+                                            
                                                 
                                             <td class="quantity__item">
                                                 <div class="quantity">                                                                                                                                       
